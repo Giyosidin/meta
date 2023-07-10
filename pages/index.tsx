@@ -30,7 +30,7 @@ const Home: NextPage = () => {
             <Web3Button contractAddress={contractAddress}
             action={(contract) => contract.call ('incrementCounter')}> Increment Counter </Web3Button>
           </div>
-
+          
           <div className={styles.grid}>
             <div className={styles.card}>
         <Web3Button 
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.card}>
             <Web3Button contractAddress={contractAddress}
-            action={(contract) => contract.call ('deincrementCounter')}> Decrement Counter </Web3Button>
+            action={(contract) => contract.call ('decrementCounter')}> Decrement Counter </Web3Button>
           </div>
 
         </div>
